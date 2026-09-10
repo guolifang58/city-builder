@@ -1,6 +1,20 @@
 # 🏙️ 自由城市 · 城建沙盒
 
-一个用纯原生网页技术实现的**自由城市建设沙盒游戏**。没有固定关卡，给你一片土地和一笔启动资金，想怎么建就怎么建——是打造工业帝国，还是宜居花园城市，全凭你发挥。
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Zero Dependency](https://img.shields.io/badge/%E9%9B%B6%E4%BE%9D%E8%B5%96-%E7%BA%AF%E5%8E%9F%E7%94%9F-brightgreen)
+![License MIT](https://img.shields.io/badge/License-MIT-yellow)
+
+## 📖 项目介绍
+
+**「自由城市」是一个开放式的城市建设沙盒小游戏**,用纯原生 HTML + CSS + JavaScript 实现,**不依赖任何框架、不需要构建、双击即玩**。
+
+游戏给你一片 20×15 的空地和 2000 元启动资金,以及 9 种各有所长的建筑。没有固定关卡、没有输赢判定——你可以堆一座烟囱林立的工业巨兽,也可以建一座公园环绕的宜居花园,**怎么规划完全由你说了算**。
+
+游戏内置了一套轻量但相互制衡的经济系统:建筑消耗金钱、住宅带来人口、工厂赚钱却拉低幸福度、公园医院提升幸福度,而**幸福度会反过来放大你的每日收益**。这让「赚钱」和「宜居」之间产生了取舍,也构成了游戏的核心乐趣。
+
+> 💡 想直接体验?拉到页面底部看 [如何运行](#-如何运行),或克隆本仓库后双击 `index.html`。
 
 ![游戏截图](docs/screenshot.png)
 
