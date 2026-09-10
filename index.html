@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自由城市 · 城建沙盒</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>🏙️ 自由城市</h1>
+    <div class="resources">
+      <div class="res" title="金钱:建造消耗,每天按收益结算">💰 <span id="money">0</span></div>
+      <div class="res" title="人口:住宅提供">👥 <span id="population">0</span></div>
+      <div class="res" title="幸福度:公园医院提升,工厂降低">😊 <span id="happiness">0</span></div>
+      <div class="res" title="第几天">📅 第 <span id="day">1</span> 天</div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- 左侧:建筑面板 + 工具 -->
+    <aside class="sidebar">
+      <div class="panel-title">🧱 建筑</div>
+      <div id="palette" class="palette"></div>
+
+      <div class="panel-title">️ 工具</div>
+      <div class="tools">
+        <button id="bulldoze-btn" class="tool-btn">🧨 拆除 <kbd>右键</kbd></button>
+        <button id="save-btn" class="tool-btn">💾 保存</button>
+        <button id="load-btn" class="tool-btn">📂 读取</button>
+        <button id="reset-btn" class="tool-btn danger">♻️ 重置城市</button>
+      </div>
+
+      <div class="panel-title">ℹ️ 选中</div>
+      <div id="info" class="info">在左侧选择一种建筑,点击地图即可建造。</div>
+    </aside>
+
+    <!-- 右侧:游戏画布 -->
+    <section class="game">
+      <canvas id="city" width="800" height="600"></canvas>
+      <div id="hint" class="hint">左键建造 · 右键拆除 · 数字键 1-9 快速选择 · 空格 暂停/继续</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

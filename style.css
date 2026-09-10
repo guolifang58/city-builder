@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background: #1e2430;
+  color: #e8ecf1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== 顶部资源栏 ===== */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: #2a3344;
+  border-bottom: 2px solid #3a465c;
+}
+
+.topbar h1 {
+  font-size: 22px;
+}
+
+.resources {
+  display: flex;
+  gap: 14px;
+}
+
+.res {
+  background: #1e2430;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #3a465c;
+}
+
+.res span {
+  color: #ffd93d;
+}
+
+/* ===== 主体布局 ===== */
+.layout {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px;
+  align-items: flex-start;
+}
+
+/* ===== 左侧栏 ===== */
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  background: #2a3344;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #3a465c;
+}
+
+.panel-title {
+  font-size: 13px;
+  color: #9fb0c8;
+  margin: 14px 0 8px;
+  letter-spacing: 1px;
+}
+
+.panel-title:first-child {
+  margin-top: 0;
+}
+
+.palette {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.build-item {
+  background: #1e2430;
+  border: 2px solid #3a465c;
+  border-radius: 8px;
+  padding: 8px 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s;
+  color: #e8ecf1;
+  font-family: inherit;
+}
+
+.build-item:hover {
+  border-color: #5b7fb5;
+  transform: translateY(-1px);
+}
+
+.build-item.selected {
+  border-color: #ffd93d;
+  background: #34405a;
+}
+
+.build-item.cant-afford {
+  opacity: 0.45;
+}
+
+.build-item .emoji {
+  font-size: 24px;
+  display: block;
+}
+
+.build-item .name {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.build-item .cost {
+  font-size: 11px;
+  color: #ffd93d;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-btn {
+  background: #1e2430;
+  border: 1px solid #3a465c;
+  border-radius: 8px;
+  color: #e8ecf1;
+  padding: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  text-align: left;
+  transition: all 0.15s;
+}
+
+.tool-btn:hover {
+  border-color: #5b7fb5;
+}
+
+.tool-btn.active {
+  border-color: #ff6b6b;
+  background: #3a2a30;
+}
+
+.tool-btn.danger {
+  color: #ff9b9b;
+}
+
+.tool-btn kbd {
+  float: right;
+  background: #3a465c;
+  border-radius: 4px;
+  padding: 0 6px;
+  font-size: 11px;
+  color: #9fb0c8;
+}
+
+.info {
+  background: #1e2430;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #b8c4d6;
+  min-height: 70px;
+}
+
+/* ===== 右侧画布 ===== */
+.game {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#city {
+  background: #3a7d44;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.hint {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #9fb0c8;
+}
